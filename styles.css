@@ -1,0 +1,308 @@
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de base pour le corps du document */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #090909;
+}
+
+/* Container pour centrer et limiter la largeur du contenu */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    width: 100%;
+    background-color: #090909;    
+}
+
+/* Styles pour la navigation principale */
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+/* Style qui s'applique au logo*/
+
+.logo img{
+    width: 200px;
+
+}
+
+/* Style qui s'applique à la balise links(navigation) et à sa liste de liens*/
+
+.links {
+    width: 50%;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links li {
+    list-style-type: none;
+}
+
+
+/* Style qui s'applique aux ancres des liens de la page*/
+
+.links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding-bottom: 0.5em;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: background-size ease-in-out 0.5s ;
+    -webkit-transition: background-size;
+    -moz-transition: background-size;
+    -ms-transition: background-size;
+    -o-transition: background-size;
+}
+
+
+/* Changement de couleur des liens au survol */
+
+.links a:hover {
+    background-size: 100% 0.15em;
+    
+}
+
+/* Styles pour la section d'accueil */
+.hero {
+    background: url('images/hero-background.svg') no-repeat center center/cover; 
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    /* Ajouter une couleur de fond pour les tests */
+    background-color: #222;
+}
+
+/* Titre de la section d'accueil */
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Texte de la section d'accueil */
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Bouton de la section d'accueil */
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur du bouton au survol */
+.hero .btn:hover {
+    background-color: #e5533d;
+}
+
+/* Styles pour la section des produits */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Titre de la section des produits */
+.products h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Liste des produits */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styles pour chaque produit */
+.product-item {
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Titre du produit */
+.product-item h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+/* Prix du produit */
+.product-item p {
+    font-size: 1.2em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+/* Bouton d'ajout au panier */
+.product-item .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Changement de couleur du bouton au survol */
+.product-item .btn:hover {
+    background-color: #555;
+}
+
+/* Animation de survol du produit */
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Styles pour la section À propos */
+.about {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Titre de la section À propos */
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Texte de la section À propos */
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Styles pour la section Contact */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Titre de la section Contact */
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Formulaire de contact */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Label des champs du formulaire */
+.contact label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Champs de saisie du formulaire */
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Bouton de soumission du formulaire */
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur du bouton de soumission au survol */
+.contact button:hover {
+    background-color: #e5533d;
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Texte du pied de page */
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Styles responsives pour les écrans de petite taille */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .product-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-item {
+        max-width: 100%;
+    }
+}
